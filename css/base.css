@@ -736,7 +736,7 @@ textarea#message {
 }
 
 #countdown div {
-    background: #007BFF;
+    background: black;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -744,12 +744,11 @@ textarea#message {
 }
 
 #countdown span {
-    font-weight: bold;
-    font-size: 30px;
 	font-family: 'AlphaLyrae';
 	font-size: clamp(2rem,20vw,10rem);
     color: var(--color-title);
     font-weight: 400;
+	font-size: 8em;
     text-transform: uppercase;
 	padding-bottom: 10px;
 }
