@@ -611,9 +611,10 @@ body #cdawrap {
   }
   
   .marquee span {
-	font-family: "Monument Extended";
-	font-weight: 700;
-	color: #ff4c00;
+	font-family: 'AlphaLyrae';
+	font-size: clamp(2rem,20vw,10rem);
+    color: var(--color-title);
+    font-weight: 400;
 	font-size: 8em;
 	text-transform: uppercase;
 	display: inline-block;
