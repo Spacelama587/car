@@ -437,7 +437,7 @@ body #cdawrap {
 
 
 .frame {
-    background-color: #fff;
+    background-color: black;
     border-bottom: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -447,24 +447,27 @@ body #cdawrap {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+	color:white;
+	font-family: 'AlphaLyrae', sans-serif;
 }
 
 
 .frame__title {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: white;
 }
 
 
+
 .frame a {
-    color: #555;
+    color: white;
     text-decoration: none;
     margin: 0 10px;
 }
 
 .frame a:hover {
-    color: #000;
+    color: red;
 }
 
 
