@@ -486,7 +486,7 @@ body #cdawrap {
 }
 
 .frame__back:hover, .frame__prev:hover {
-    background-color: #0056b3;
+    background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -754,4 +754,33 @@ textarea#message {
 	font-size: 8em;
     text-transform: uppercase;
 	padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #countdown {
+       
+        gap: 10px;
+    }
+
+    #countdown div {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    #countdown span {
+        font-size: clamp(2rem, 10vw, 5rem);
+    }
+}
+
+@media (max-width: 480px) {
+  
+
+    #countdown div {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    #countdown span {
+        font-size: clamp(1.5rem, 8vw, 4rem);
+    }
 }
