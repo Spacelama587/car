@@ -734,3 +734,35 @@ preloadImages('.content__img-inner').then(() => {
 	// Apply scroll-triggered animations to each item
 	scroll();
 });
+
+const countdownElement = document.getElementById('countdown');
+const daysElement = document.getElementById('days');
+const hoursElement = document.getElementById('hours');
+const minutesElement = document.getElementById('minutes');
+const secondsElement = document.getElementById('seconds');
+
+const countdownDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000); // 3 days from now
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    daysElement.textContent = days;
+    hoursElement.textContent = hours;
+    minutesElement.textContent = minutes;
+    secondsElement.textContent = seconds;
+
+    if (distance < 0) {
+        clearInterval(countdownInterval);
+        countdownElement.innerHTML = "EXPIRED";
+    }
+}
+
+const countdownInterval = setInterval(updateCountdown, 1000);
+
+updateCountdown();

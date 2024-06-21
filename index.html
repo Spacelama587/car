@@ -12,6 +12,14 @@
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";</script>
 		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+		<script
+		type="module"
+		src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+	  ></script>
+	  <script
+		nomodule
+		src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+	  ></script>
 	</head>
 	<body class="loading">
 		<main>
@@ -95,13 +103,85 @@
             <p style="text-align: center;"><a href="mailto:info@vroomerzexoticz.com">info@vroomerzexoticz.com</a></p>
         </div>
 		</main>
-		<div class="marquee">
-			<h1 class="intro__title-pre">WE ARE COMING BACK SOON</h1>
-		</div>
+		<div class="container">
+			<div class="top-nav">
+			  <p style="text-transform: uppercase;">
+				we pride ourselves on offering a meticulously curated selection of vehicles to meet all your travel needs. 
+			  </p>
+			</div>
+			<div class="nav">
+			
+		
+		
+			</div>
+			<div class="marquee">
+			  <span>
+				contact us / contact us / contact us / contact us / contact us /
+				contact us / contact us / contact us / contact us / contact us
+			  </span>
+			</div>
+			<div class="contact-section">
+			  <div class="contact-details col">
+				<p>
+				  Let's unlock together the next <br />
+				  level of possibilities! <br />
+				  Reach out.
+				</p>
+	  
+				<div class="social-media item">
+				  <h3>Social Media</h3>
+				  <span>TWITTER — INSTAGRAM — YOUTUBE</span>
+				</div>
+	  
+				<div class="contact-info">
+				  <div class="email item">
+					<h3>Get in touch</h3>
+					<span>email@email.com</span>
+				  </div>
+				  <div class="address item">
+					<h3>location</h3>
+					<span>MIAMI - USA</span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="contact-form col">
+				<div class="wrapper">
+				  <div class="row">
+					<input type="text" placeholder="Name" />
+					<input type="text" placeholder="Location" />
+				  </div>
+				  <div class="row">
+					<input type="text" placeholder="Email" />
+					<input type="text" placeholder="Budget" />
+				  </div>
+				  <div class="row">
+					<textarea
+					  type="text"
+					  placeholder="Message"
+					  rows="5"
+					  id="message"
+					></textarea>
+				  </div>
+				  <div class="row submit">
+					<a href="#">Submit</a>
+					<div class="send-icon">
+					  <ion-icon name="arrow-forward-sharp"></ion-icon>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		
 		<footer>
             <p  style="text-align: center;">&copy; 2024 Vroomerz Exoticz</p>
         </footer>
-
+		<div id="countdown">
+            <div><span id="days"></span> Days</div>
+            <div><span id="hours"></span> Hours</div>
+            <div><span id="minutes"></span> Minutes</div>
+            <div><span id="seconds"></span> Seconds</div>
+        </div>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/splitting.min.js"></script>
 		<script src="js/gsap.min.js"></script>
